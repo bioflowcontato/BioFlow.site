@@ -21,8 +21,11 @@ export default function ActionButton({
   className = '',
   onClick,
 }: Props) {
+  const focusRing = variant.startsWith('studio-')
+    ? 'focus-visible:ring-white/80 focus-visible:ring-offset-[#080808]'
+    : 'focus-visible:ring-cyan-400/70 focus-visible:ring-offset-navy-900';
   const base =
-    'group relative inline-flex w-full items-center justify-center gap-3 rounded-2xl px-6 py-4 text-base font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/70 focus-visible:ring-offset-2 focus-visible:ring-offset-navy-900';
+    `group relative inline-flex w-full items-center justify-center gap-3 rounded-2xl px-6 py-4 text-base font-semibold transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${focusRing}`;
 
   const variants = {
     primary:
@@ -32,9 +35,9 @@ export default function ActionButton({
     ghost:
       'text-slate-300 hover:text-white border border-white/10 hover:border-white/20 hover:bg-white/5',
     'studio-primary':
-      'text-[#fffdf8] bg-[#1d1a16] border border-[#1d1a16] hover:bg-[#3b3429] hover:scale-[1.02] shadow-lg shadow-[#8b7352]/25',
+      'text-[#080808] bg-[#f3f3f3] border border-[#f3f3f3] hover:bg-white hover:scale-[1.02] shadow-lg shadow-black/30',
     'studio-secondary':
-      'text-[#2b261f] bg-[#fffdf8]/80 border border-[#b99b68]/50 hover:bg-[#fffdf8] hover:border-[#a68551] hover:scale-[1.02] shadow-sm shadow-[#8b7352]/10',
+      'text-white bg-white/[0.04] border border-white/20 hover:bg-white/10 hover:border-white/50 hover:scale-[1.02]',
   };
 
   return (
@@ -49,8 +52,4 @@ export default function ActionButton({
       <span>{children}</span>
     </a>
   );
-}
-
-export function buildWhatsappLink(number: string, message: string) {
-  return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }

@@ -7,9 +7,10 @@ type AmbientBackgroundProps = {
 export default function AmbientBackground({ theme = 'bioflow' }: AmbientBackgroundProps) {
   if (theme === 'studio') {
     return (
-      <div className="fixed inset-0 -z-10 overflow-hidden bg-[#f4efe7]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(194,161,104,0.16),transparent_34%),radial-gradient(circle_at_90%_70%,rgba(224,210,184,0.42),transparent_38%)]" />
-        <div className="absolute inset-0 opacity-[0.22] [background-image:linear-gradient(rgba(45,38,29,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(45,38,29,0.08)_1px,transparent_1px)] [background-size:56px_56px]" />
+      <div className="fixed inset-0 -z-10 overflow-hidden bg-[#080808]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,255,255,0.09),transparent_55%),radial-gradient(circle_at_90%_62%,rgba(148,163,184,0.06),transparent_34%)]" />
+        <div className="absolute -top-52 left-1/2 h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-white/[0.035] blur-[140px]" />
+        <div className="absolute inset-0 opacity-[0.025] [background-image:linear-gradient(rgba(255,255,255,0.24)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.24)_1px,transparent_1px)] [background-size:72px_72px]" />
       </div>
     );
   }

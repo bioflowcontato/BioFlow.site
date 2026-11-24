@@ -4,101 +4,75 @@
 export const studioConfig = {
   // Nome e identidade
   brandName: 'Studio Lumina',
-  tagline: 'Fotografia & Conteúdo Visual',
+  tagline: 'Tattoo studio · projeto conceitual',
   logoInitials: 'SL',
 
   // Descrição
-  description:
-    'Capturamos a essência da sua marca com fotografia profissional e direção de arte contemporânea. Sessõeseditoriais, conteúdo para redes sociais e imagens que comunicam.',
+  description: 'Blackwork, Realismo, Fine Line e Old School.',
 
-  // Contato — substituir pelo número real do cliente (formato: 55 + DDD + número)
-  whatsappNumber: '5553999999999',
-  whatsappMessage: 'Olá! Vim pelo Instagram e gostaria de mais informações sobre as sessões do Studio Lumina.',
+  // Contato temporário da BioFlow para apresentar este modelo de site
+  whatsappNumber: '5553981565080',
+  whatsappMessage:
+    'Olá! Vi o projeto demonstrativo do Studio Lumina e gostaria de saber mais sobre a criação de um site para meu negócio.',
 
-  // Redes sociais
-  instagram: 'https://instagram.com',
-  instagramHandle: '@studiolumina',
-
-  // Endereço e horário
-  address: 'Rua Marechal Deodoro, 458 — Centro, Rio Grande/RS',
-  hours: [
-    { day: 'Segunda a Sexta', time: '09h às 19h' },
-    { day: 'Sábado', time: '09h às 13h' },
-    { day: 'Domingo', time: 'Fechado' },
-  ],
-
-  // Serviços com preços fictícios
-  services: [
+  specialties: [
     {
-      icon: 'camera',
-      title: 'Sessão Editorial',
-      description: 'Ensaio completo em estúdio com direção de arte e tratamento de imagem.',
-      price: 'R$ 450',
-      features: ['2 horas de ensaio', '20 fotos tratadas', 'Mudança de até 3 looks'],
+      title: 'Blackwork',
+      description: 'Composições em tinta preta, com contraste marcante.',
     },
     {
-      icon: 'smartphone',
-      title: 'Conteúdo para Redes',
-      description: 'Pacote mensal de fotos e reels para alimentar suas redes sociais.',
-      price: 'R$ 890',
-      features: ['12 fotos + 4 reels', 'Direção criativa', 'Edição inclusa'],
+      title: 'Realismo',
+      description: 'Luz, sombra e detalhes em composições realistas.',
     },
     {
-      icon: 'users',
-      title: 'Ensaio Corporativo',
-      description: 'Imagens profissionais para equipe, produtos e identidade da marca.',
-      price: 'R$ 1.200',
-      features: ['Até 5 colaboradores', 'Uso comercial liberado', 'Entrega em 7 dias'],
+      title: 'Fine Line',
+      description: 'Traços delicados e linhas de precisão.',
     },
     {
-      icon: 'image',
-      title: 'Tratamento & Retoque',
-      description: 'Pós-produção avançada de imagens existentes para um padrão editorial.',
-      price: 'R$ 60 / foto',
-      features: ['Retoque high-end', 'Correção de cor', 'Entrega digital'],
+      title: 'Old School',
+      description: 'Contornos definidos e referências tradicionais.',
     },
   ],
 
-  // Galeria — IDs das imagens geradas localmente
+  // Fotografias ilustrativas externas para a demonstração
   heroImage:
-    'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=85&w=1800&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
+    'https://images.unsplash.com/photo-1761276297686-f507ca9fe8b6?auto=format&fit=crop&w=2000&q=88',
+  heroImageAlt: 'Tatuador trabalhando em uma tatuagem no braço de um cliente',
   galleryPhotos: [
     {
-      id: 'ceremony-kiss',
-      title: 'Cerimônia: o primeiro beijo',
-      src: 'https://images.unsplash.com/photo-1779475501433-69a3a0b310f8?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
+      id: 'blackwork',
+      title: 'Blackwork',
+      description: 'Contraste profundo e tinta preta.',
+      src: 'https://images.unsplash.com/photo-1640202430303-a71359ade259?auto=format&fit=crop&w=1100&q=85',
+      position: 'center 40%',
     },
     {
-      id: 'outdoor-portrait',
-      title: 'Ensaio dos noivos ao ar livre',
-      src: 'https://plus.unsplash.com/premium_photo-1661348111996-5c36acf85dc6?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
+      id: 'realismo',
+      title: 'Realismo',
+      description: 'Luz e detalhe em preto e cinza.',
+      src: 'https://images.unsplash.com/photo-1645384816403-bf9913531c0d?auto=format&fit=crop&w=1100&q=85',
+      position: 'center 35%',
     },
     {
-      id: 'rings-detail',
-      title: 'Troca de alianças',
-      src: 'https://images.unsplash.com/photo-1693735455191-98b808a2c4c7?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
+      id: 'fine-line',
+      title: 'Fine Line',
+      description: 'Linhas finas e desenho delicado.',
+      src: 'https://images.unsplash.com/photo-1651692883249-ed36b3523419?auto=format&fit=crop&w=1100&q=85',
+      position: 'center 40%',
     },
     {
-      id: 'first-dance',
-      title: 'Primeira dança',
-      src: 'https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
+      id: 'old-school',
+      title: 'Old School',
+      description: 'Referências tradicionais em tinta.',
+      src: 'https://images.pexels.com/photos/8182253/pexels-photo-8182253.jpeg?auto=compress&dpr=1&h=750&w=1260',
+      position: 'center 40%',
     },
-    {
-      id: 'bride-portrait',
-      title: 'Noiva em luz natural',
-      src: 'https://plus.unsplash.com/premium_photo-1711132425055-1c289c69b950?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
-    },
-    {
-      id: 'decor-details',
-      title: 'Buquê e decoração',
-      src: 'https://images.unsplash.com/photo-1706741922164-aac132e6dff8?q=85&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
-      position: 'center',
-    },
+  ],
+  priceExamples: [
+    { specialty: 'Blackwork', examplePrice: 'R$ 350' },
+    { specialty: 'Realismo', examplePrice: 'R$ 600' },
+    { specialty: 'Fine Line', examplePrice: 'R$ 250' },
+    { specialty: 'Old School', examplePrice: 'R$ 300' },
   ],
 };
 
@@ -107,7 +81,8 @@ export const bioflowConfig = {
   city: 'Rio Grande, Rio Grande do Sul',
   country: 'Brasil',
   email: 'bioflowcontato@gmail.com',
-  whatsappNumber: '5553999999999',
-  whatsappMessage: 'Olá! Quero criar uma página de Link na Bio profissional para o meu negócio com a BioFlow.',
-  instagram: 'https://instagram.com',
+  whatsappNumber: '5553981565080',
+  whatsappMessage: 'Olá! Conheci a BioFlow e gostaria de saber mais sobre os serviços de criação de mini sites.',
+  instagram: 'https://www.instagram.com/bioflowrg/',
+  instagramHandle: '@bioflowrg',
 };

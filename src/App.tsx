@@ -35,7 +35,7 @@ function App() {
             aria-label="BioFlow — página principal"
           >
             <img
-              src="/Logo_futurista_neon_BioFlow.png"
+              src="/bioflow-logo.png"
               alt="BioFlow"
               className="h-9 w-9 rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
             />
@@ -66,7 +66,7 @@ function App() {
       </header>
 
       {/* Conteúdo */}
-      <div key={view} className={`animate-fade-in ${view === 'studio' ? 'bg-[#f4efe7]' : ''}`}>
+      <div key={view} className={`animate-fade-in ${view === 'studio' ? 'bg-[#080808]' : ''}`}>
         {view === 'studio' ? <StudioPage /> : <BioFlowPage onViewDemo={goToStudio} />}
       </div>
     </div>

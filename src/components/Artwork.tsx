@@ -174,8 +174,8 @@ export function StudioMark({ initials = 'SL', className = '' }: { initials?: str
     <svg viewBox="0 0 48 48" className={className} role="img" aria-label={`Logo ${initials}`}>
       <defs>
         <linearGradient id="studio-g" x1="0" y1="0" x2="48" y2="48">
-          <stop offset="0%" stopColor="#e5c98f" />
-          <stop offset="100%" stopColor="#8b6b3d" />
+          <stop offset="0%" stopColor="#f3f3f3" />
+          <stop offset="100%" stopColor="#777777" />
         </linearGradient>
       </defs>
       <rect width="48" height="48" rx="12" fill="url(#studio-g)" opacity="0.15" />
